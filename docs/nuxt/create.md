@@ -95,7 +95,7 @@ module.exports = {
         ],
         'vue/html-quotes': ['error', 'double', { avoidEscape: true }], // vue template 单双引号配置
         'template-curly-spacing': 'off',
-        indent: ['error', 4], // 定义缩进
+        'indent': ['error', 4], // 定义缩进
         'standard/no-callback-literal': 0,
         'vue/html-indent': ['error', 4, {
             attribute: 1,
