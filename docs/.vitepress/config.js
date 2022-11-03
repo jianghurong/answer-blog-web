@@ -10,6 +10,12 @@ export default {
                 items: [
                     { text: 'Introduction', link: '/nuxt/create' }
                 ]
+            },
+            {
+                text: 'Vite',
+                items: [
+                    { text: 'Introduction', link: '/vite/create' }
+                ]
             }
         ]
     }
