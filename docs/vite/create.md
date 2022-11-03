@@ -30,7 +30,7 @@ module.exports = {
         'vue'
     ],
     rules: {
-        indent: ['error', 4], // 定义缩进
+        'indent': ['error', 4], // 定义缩进
         'vue/html-indent': ['error', 4, {
             attribute: 1,
             baseIndent: 1,
