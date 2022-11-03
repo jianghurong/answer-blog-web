@@ -2,8 +2,11 @@ export default {
     base: '/answer-blog-web/',
     title: '答案博客 | 答案如刀',
     description: '秣马厉兵，砥砺前行。',
+    lastUpdated: true,
     themeConfig: {
+        // 网页标题
         siteTitle: 'AnswerBlog',
+        // 侧边栏菜单
         sidebar: [
             {
                 text: 'Nuxt',
@@ -17,6 +20,10 @@ export default {
                     { text: 'Introduction', link: '/vite/create' }
                 ]
             }
+        ],
+        // 社交链接
+        socialLinks: [
+            { icon: 'github', link: 'https://github.com/jianghurong'}
         ]
     }
 }
