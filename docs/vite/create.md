@@ -7,7 +7,7 @@ npm init vite@latest
 ## eslint
 安装依赖
 ```
-npm i eslint eslint-config-standard eslint-plugin-vue eslint-plugin-import eslint-plugin-n eslint-plugin-promise --save-dev
+npm i eslint eslint-plugin-vue eslint-config-standard eslint-plugin-import eslint-plugin-n eslint-plugin-promise --save-dev
 ```
 .eslintrc.cjs
 ```js
