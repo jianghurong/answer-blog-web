@@ -19,6 +19,12 @@ export default {
                 items: [
                     { text: 'Introduction', link: '/vite/create' }
                 ]
+            },
+            {
+                text: 'Encrypt',
+                items: [
+                    { text: 'crypto-js', link: '/encrypt/crypto-js' }
+                ]
             }
         ],
         // 社交链接
