@@ -14,7 +14,7 @@ npm init nuxt-app project
 ## eslint&prettier
 安装 eslint 依赖
 ```
-npm i @vue/cli-plugin-eslint eslint eslint-plugin-vue @vue/eslint-config-standard --save-dev
+npm i eslint @vue/cli-plugin-eslint eslint-plugin-vue @vue/eslint-config-standard --save-dev
 ```
 
 .eslintrc.js
