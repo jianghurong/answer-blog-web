@@ -9,7 +9,7 @@ npm init nuxt-app project
 ```
 选择功能(示例截图)
 
-![选择功能](../assets/images/nuxt.jpg)
+![选择功能](../../assets/images/nuxt.jpg)
 
 ## eslint&prettier
 安装 eslint 依赖
