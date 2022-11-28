@@ -8,7 +8,7 @@ hero:
   actions:
     - theme: brand
       text: 开始
-      link: /nuxt/create
+      link: /frontEnd/nuxt/create
     - theme: alt
       text: Github
       link: https://github.com/jianghurong
