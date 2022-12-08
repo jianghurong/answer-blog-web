@@ -32,7 +32,13 @@ export default {
                 {
                     text: 'Demo',
                     items: [
-                        { text: 'Introduction', link: '/chrome/extension/start.html' }
+                        { text: 'Introduction', link: '/chrome/extension/start' }
+                    ]
+                },
+                {
+                    text: 'Automa',
+                    items: [
+                        { text: 'Introduction', link: '/chrome/extension/automa' }
                     ]
                 }
             ]
