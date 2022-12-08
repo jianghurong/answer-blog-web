@@ -9,5 +9,5 @@
 ![选择功能](/../../assets/images/typed_arrays.png)  
 理解： 
 长度为1的``ArrayBuffer``有16 Bytes(字节)，而一个字节有8bit。  
-所以``Uint8Array``表示 16Bytes * 8bit / 8 = 128bit / 8 = 16 区间分为16块
-``Uint16Array``表示 16Bytes * 8bit / 16 = 128bit / 16 = 8 区间分为8块
+所以``Uint8Array``表示 16Bytes * 8bit / 8 = 128bit / 8 = 16 区间分为16块  
+``Uint16Array``表示 16Bytes * 8bit / 16 = 128bit / 16 = 8 区间分为8块  
