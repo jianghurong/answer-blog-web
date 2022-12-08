@@ -48,6 +48,12 @@ export default {
                     items: [
                         { text: 'Introduction', link: '/JavaScript/ArrayBuffer' }
                     ]
+                },
+                {
+                    text: 'TypedArray',
+                    items: [
+                        { text: 'Introduction', link: '/JavaScript/TypedArray' }
+                    ]
                 }
             ]
         },
