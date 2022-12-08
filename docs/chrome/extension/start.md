@@ -1,6 +1,7 @@
 ## 创建应用/扩展程序
 
 [Chrome Documentation](https://developer.chrome.com/docs/extensions/)
+[Chrome Documentation中文文档(非官方)](http://docs.getxhr.com/ChromeExtensionDocument/index.html)
 
 ### 1. 构建应用/扩展程序
 * 创建JSON文件  
@@ -25,3 +26,13 @@ manifest.json
  >> hello.html  
  >> hello_extensions.png  
  >> manifest.json  
+
+ ### 2. 应用/扩展相关知识
+* 浏览器中访问插件路径格式
+```
+chrome-extension://<扩展程序唯一标识符>/<文件路径>
+```
+例:
+```
+chrome-extension://gofdleamepcnnfdmbcighamlibgahbln/hello_extensions.png
+```
