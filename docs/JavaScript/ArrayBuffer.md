@@ -30,3 +30,30 @@ ArrayBuffer.isView(new Int8Array(8)) // true
 ArrayBuffer.prototype.slice()
 // 返回一个新的ArrayBuffer，用法同数组slice方法一样
 ```
+
+### 使用
+FileReader
+```html
+<input
+    type="file"
+    @change="onFileChange"
+/>
+```
+```js
+function onFileChange (e) {
+    const fileReader1 = new FileReader()
+    fileReader1.readAsArrayBuffer(e.target.files[0])
+    fileReader1.onload = function (e) {
+        console.log(e.target.result)
+        const result = e.target.result // ArrayBuffer
+        const enc = new TextDecoder('utf-8') // 编码类型
+        const arr = new Int8Array(result) // 类型化数组对象
+        console.log(enc.decode(arr)) // 解析数据
+    }
+    const fileReader2 = new FileReader()
+    fileReader2.readAsText(e.target.files[0])
+    fileReader2.onload = function (e) {
+        console.log(e.target.result) // 解析为文本
+    }
+}
+```
