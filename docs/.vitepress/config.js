@@ -26,7 +26,7 @@ export default {
                     items: [
                         { text: 'crypto-js', link: '/frontEnd/encrypt/crypto-js' }
                     ]
-                }
+                },
             ],
             '/chrome/': [
                 {
@@ -41,6 +41,20 @@ export default {
                         { text: 'Introduction', link: '/chrome/extension/automa' }
                     ]
                 }
+            ],
+            '/JavaScript/': [
+                {
+                    text: 'ArrayBuffer',
+                    items: [
+                        { text: 'Introduction', link: '/JavaScript/ArrayBuffer' }
+                    ]
+                },
+                {
+                    text: 'TypedArray',
+                    items: [
+                        { text: 'Introduction', link: '/JavaScript/TypedArray' }
+                    ]
+                }
             ]
         },
         // 社交链接
@@ -49,6 +63,7 @@ export default {
         ],
         // 导航栏菜单
         nav: [
+            { text: 'JavaScript', link: '/JavaScript/ArrayBuffer' },
             { text: 'FrontEnd', link: '/frontEnd/nuxt/create' },
             { text: 'Chrome Extensions', link: '/chrome/extension/start' }
         ]
