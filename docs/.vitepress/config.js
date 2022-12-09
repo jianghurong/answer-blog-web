@@ -55,6 +55,17 @@ export default {
                         { text: 'Introduction', link: '/JavaScript/TypedArray' }
                     ]
                 }
+            ],
+            '/Java/': [
+                {
+                    text: 'Redis',
+                    items: [
+                        { text: '安装/启动', link: '/Java/Redis/index#安装' },
+                        { text: '数据结构', link: '/Java/Redis/index#数据结构' },
+                        { text: 'String', link: '/Java/Redis/index#string' },
+                        { text: 'List', link: '/Java/Redis/index#list' },
+                    ]
+                }
             ]
         },
         // 社交链接
@@ -64,6 +75,7 @@ export default {
         // 导航栏菜单
         nav: [
             { text: 'JavaScript', link: '/JavaScript/ArrayBuffer' },
+            { text: 'Java', link: '/Java/Redis/index#安装' },
             { text: 'FrontEnd', link: '/frontEnd/nuxt/create' },
             { text: 'Chrome Extensions', link: '/chrome/extension/start' }
         ]
