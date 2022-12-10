@@ -66,6 +66,14 @@ export default {
                         { text: 'List', link: '/Java/Redis/index#list' },
                     ]
                 }
+            ],
+            '/Vue3/': [
+                {
+                    text: 'nextTick',
+                    items: [
+                        { text: 'Source Code Analysis', link: '/Vue3/nextTick' }
+                    ]
+                }
             ]
         },
         // 社交链接
@@ -77,7 +85,8 @@ export default {
             { text: 'JavaScript', link: '/JavaScript/ArrayBuffer' },
             { text: 'Java', link: '/Java/Redis/index#安装' },
             { text: 'FrontEnd', link: '/frontEnd/nuxt/create' },
-            { text: 'Chrome Extensions', link: '/chrome/extension/start' }
+            { text: 'Chrome Extensions', link: '/chrome/extension/start' },
+            { text: 'Vue3', link: '/Vue3/nextTick' }
         ]
     }
 }
