@@ -111,18 +111,22 @@ export function isReactive(value: unknown): boolean {
   return !!(value && (value as Target).__ob__)
 }
 
+// 判断输入值是否是浅观察对象
 export function isShallow(value: unknown): boolean {
   return !!(value && (value as Target).__v_isShallow)
 }
 
+// 判断输入值是否是只读对象
 export function isReadonly(value: unknown): boolean {
   return !!(value && (value as Target).__v_isReadonly)
 }
 
+// 判断输入值是否是代理对象
 export function isProxy(value: unknown): boolean {
   return isReactive(value) || isReadonly(value)
 }
 
+// 转化为原始值
 export function toRaw<T>(observed: T): T {
   const raw = observed && (observed as Target)[ReactiveFlags.RAW]
   return raw ? toRaw(raw) : observed
@@ -148,4 +152,86 @@ export function isCollectionType(value: unknown): boolean {
   )
 }
 
+```
+
+## 总结  
+创建 ``reactive`` 对象的精华是下面这句
+```js
+var ob = observe(target, shallow, isServerRendering()
+/**
+ * Attempt to create an observer instance for a value,
+ * returns the new observer if successfully observed,
+ * or the existing observer if the value already has one.
+ */
+function observe(value, shallow, ssrMockReactivity) {
+    if (value && hasOwn(value, '__ob__') && value.__ob__ instanceof Observer) {
+        return value.__ob__;
+    } // 如果已有观察者，直接返回该观察者
+    if (shouldObserve &&
+        (ssrMockReactivity || !isServerRendering()) &&
+        (isArray(value) || isPlainObject(value)) &&
+        Object.isExtensible(value) &&
+        !value.__v_skip /* ReactiveFlags.SKIP */ &&
+        !isRef(value) &&
+        !(value instanceof VNode)) {
+        return new Observer(value, shallow, ssrMockReactivity); // 创建观察者
+    }
+}
+/**
+   * Observer class that is attached to each observed
+   * object. Once attached, the observer converts the target
+   * object's property keys into getter/setters that
+   * collect dependencies and dispatch updates.
+   */
+var Observer = /** @class */ (function () {
+    function Observer(value, shallow, mock) {
+        if (shallow === void 0) { shallow = false; }
+        if (mock === void 0) { mock = false; }
+        this.value = value;
+        this.shallow = shallow;
+        this.mock = mock;
+        // this.value = value
+        this.dep = mock ? mockDep : new Dep(); // 根据是否应用服务端创建Dep
+        this.vmCount = 0;
+        def(value, '__ob__', this);
+        if (isArray(value)) {
+            if (!mock) {
+                if (hasProto) {
+                    value.__proto__ = arrayMethods;
+                    /* eslint-enable no-proto */
+                }
+                else {
+                    for (var i = 0, l = arrayKeys.length; i < l; i++) {
+                        var key = arrayKeys[i];
+                        def(value, key, arrayMethods[key]);
+                    }
+                }
+            }
+            if (!shallow) {
+                this.observeArray(value);
+            }
+        }
+        else {
+            /**
+             * Walk through all properties and convert them into
+             * getter/setters. This method should only be called when
+             * value type is Object.
+             */
+            var keys = Object.keys(value);
+            for (var i = 0; i < keys.length; i++) {
+                var key = keys[i];
+                defineReactive(value, key, NO_INITIAL_VALUE, undefined, shallow, mock);
+            }
+        }
+    }
+    /**
+     * Observe a list of Array items.
+     */
+    Observer.prototype.observeArray = function (value) {
+        for (var i = 0, l = value.length; i < l; i++) {
+            observe(value[i], false, this.mock);
+        }
+    };
+    return Observer;
+}());
 ```
