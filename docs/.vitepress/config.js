@@ -73,6 +73,12 @@ export default {
                     items: [
                         { text: 'Source Code Analysis', link: '/Vue3/nextTick' }
                     ]
+                },
+                {
+                    text: 'reactivity',
+                    items: [
+                        { text: 'reactive', link: '/Vue3/reactivity/reactive' }
+                    ]
                 }
             ]
         },
