@@ -67,25 +67,25 @@ export default {
                     ]
                 }
             ],
-            '/Vue3/': [
+            '/vue3/': [
                 {
                     text: 'summary',
                     items: [
-                        { text: 'reactive的创建过程', link: '/Vue3/summary/reactive的创建过程' },
-                        { text: 'ref的创建过程', link: '/Vue3/summary/ref的创建过程' },
-                        { text: 'ref的设值与取值', link: '/Vue3/summary/ref的设值与取值' }
+                        { text: 'reactive的创建过程', link: '/vue3/summary/reactive的创建过程' },
+                        { text: 'ref的创建过程', link: '/vue3/summary/ref的创建过程' },
+                        { text: 'ref的设值与取值', link: '/vue3/summary/ref的设值与取值' }
                     ]
                 },
                 {
                     text: 'nextTick',
                     items: [
-                        { text: 'Source Code Analysis', link: '/Vue3/nextTick' }
+                        { text: 'Source Code Analysis', link: '/vue3/nextTick' }
                     ]
                 },
                 // {
                 //     text: 'reactivity',
                 //     items: [
-                //         { text: 'reactive', link: '/Vue3/reactivity/reactive' }
+                //         { text: 'reactive', link: '/vue3/reactivity/reactive' }
                 //     ]
                 // }
             ]
@@ -100,7 +100,7 @@ export default {
             { text: 'Java', link: '/Java/Redis/index#安装' },
             { text: 'FrontEnd', link: '/frontEnd/nuxt/create' },
             { text: 'Chrome Extensions', link: '/chrome/extension/start' },
-            { text: 'Vue3', link: '/Vue3/nextTick' }
+            { text: 'Vue3', link: '/vue3/nextTick' }
         ]
     }
 }
