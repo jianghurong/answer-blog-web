@@ -69,17 +69,25 @@ export default {
             ],
             '/Vue3/': [
                 {
+                    text: 'summary',
+                    items: [
+                        { text: 'reactive的创建过程', link: '/Vue3/summary/reactive的创建过程' },
+                        { text: 'ref的创建过程', link: '/Vue3/summary/ref的创建过程' },
+                        { text: 'ref的设值与取值', link: '/Vue3/summary/ref的设值与取值' }
+                    ]
+                },
+                {
                     text: 'nextTick',
                     items: [
                         { text: 'Source Code Analysis', link: '/Vue3/nextTick' }
                     ]
                 },
-                {
-                    text: 'reactivity',
-                    items: [
-                        { text: 'reactive', link: '/Vue3/reactivity/reactive' }
-                    ]
-                }
+                // {
+                //     text: 'reactivity',
+                //     items: [
+                //         { text: 'reactive', link: '/Vue3/reactivity/reactive' }
+                //     ]
+                // }
             ]
         },
         // 社交链接
