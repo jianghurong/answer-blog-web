@@ -1,1 +1,0 @@
-import{_ as s,c as n,o as a,a as l}from"./app.1182e15c.js";const i=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"vue3/summary/ref的设值与取值.md","lastUpdated":1671163097000}'),p={name:"vue3/summary/ref的设值与取值.md"},o=l("",5),e=[o];function t(c,r,F,y,D,A){return a(),n("div",null,e)}const u=s(p,[["render",t]]);export{i as __pageData,u as default};

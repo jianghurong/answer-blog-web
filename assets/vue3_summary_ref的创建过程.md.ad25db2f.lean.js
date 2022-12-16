@@ -1,0 +1,1 @@
+import{_ as s,c as n,o as a,a as l}from"./app.31c7625e.js";const i=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"vue3/summary/ref的创建过程.md","lastUpdated":1671163097000}'),p={name:"vue3/summary/ref的创建过程.md"},o=l("",7),e=[o];function t(c,r,F,y,D,A){return a(),n("div",null,e)}const u=s(p,[["render",t]]);export{i as __pageData,u as default};
