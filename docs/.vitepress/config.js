@@ -88,6 +88,16 @@ export default {
                 //         { text: 'reactive', link: '/vue3/reactivity/reactive' }
                 //     ]
                 // }
+            ],
+            '/TypeScript/': [
+                {
+                    text: 'summary',
+                    items: [
+                        {
+                            text: '基础', link: '/TypeScript/'
+                        }
+                    ]
+                }
             ]
         },
         // 社交链接
@@ -100,7 +110,8 @@ export default {
             { text: 'Java', link: '/Java/Redis/index#安装' },
             { text: 'FrontEnd', link: '/frontEnd/nuxt/create' },
             { text: 'Chrome Extensions', link: '/chrome/extension/start' },
-            { text: 'Vue3', link: '/vue3/nextTick' }
+            { text: 'Vue3', link: '/vue3/nextTick' },
+            { text: 'TypeScript', link: '/TypeScript/'}
         ]
     }
 }
