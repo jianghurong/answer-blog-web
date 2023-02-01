@@ -27,6 +27,12 @@ export default {
                         { text: 'crypto-js', link: '/frontEnd/encrypt/crypto-js' }
                     ]
                 },
+                {
+                    text: '设计模式开发与实践',
+                    items: [
+                        { text: '高阶函数', link: '/frontEnd/设计模式开发与实践/高阶函数' }
+                    ]
+                }
             ],
             '/chrome/': [
                 {
