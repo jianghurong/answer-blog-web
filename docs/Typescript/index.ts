@@ -44,3 +44,15 @@ interface NameList {
 }
 let nameList: NameList = ['1']
 // num.splice(0, 1)
+
+interface Shape {
+    color: string
+}
+interface Square extends Shape {
+    sideLength: number
+}
+let square = <Square>{} // 类型断言
+let square1: Square = {
+    color: '',
+    sideLength: 0
+}

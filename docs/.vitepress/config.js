@@ -27,6 +27,12 @@ export default {
                         { text: 'crypto-js', link: '/frontEnd/encrypt/crypto-js' }
                     ]
                 },
+                {
+                    text:'Electron',
+                    items: [
+                        { text: 'Introduction', link: '/frontEnd/electron/electron-fiddle' }
+                    ]
+                }
             ],
             '/chrome/': [
                 {

@@ -106,4 +106,21 @@ let nameList: NameList = ['1']
 // 接口可以通过其它接口来扩展自己，TypeScript允许接口继承多个接口
 interface Student extends Person, Chinese
 ```
-
+### 继承接口
+和类一样，接口也可以继承。这让我们能够从一个接口里复制成员到另一个接口里，可以更灵活地将接口分割到可重用的模块里。
+```ts
+interface Shape {
+    color: string
+}
+interface Square extends Shape {
+    sideLength: number
+}
+let square = <Square>{} // 类型断言
+square.color = 'blue'
+square.sideLength = 10
+let square1: Square = {
+    color: '',
+    sideLength: 0,
+    width: ''
+}
+```
