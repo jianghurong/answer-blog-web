@@ -42,7 +42,7 @@ export default {
             ],
             '/chrome/': [
                 {
-                    text: 'Demo',
+                    text: 'Chrome Extensions',
                     items: [
                         { text: 'Introduction', link: '/chrome/extension/start' }
                     ]
@@ -51,6 +51,12 @@ export default {
                     text: 'Automa',
                     items: [
                         { text: 'Introduction', link: '/chrome/extension/automa' }
+                    ]
+                },
+                {
+                    text: 'Chrome V8',
+                    items: [
+                        { text: 'Introduction' , link: '/chrome/v8/start' }
                     ]
                 }
             ],
@@ -121,7 +127,7 @@ export default {
             { text: 'JavaScript', link: '/JavaScript/ArrayBuffer' },
             { text: 'Java', link: '/Java/Redis/index#安装' },
             { text: 'FrontEnd', link: '/frontEnd/nuxt/create' },
-            { text: 'Chrome Extensions', link: '/chrome/extension/start' },
+            { text: 'Chrome', link: '/chrome/extension/start' },
             { text: 'Vue3', link: '/vue3/nextTick' },
             { text: 'TypeScript', link: '/TypeScript/'}
         ]

@@ -1,6 +1,6 @@
 ## 创建应用/扩展程序
 
-[Chrome Documentation](https://developer.chrome.com/docs/extensions/)
+[Chrome Documentation](https://developer.chrome.com/docs/extensions/)  
 [Chrome Documentation中文文档(非官方)](http://docs.getxhr.com/ChromeExtensionDocument/index.html)
 
 ### 1. 构建应用/扩展程序
