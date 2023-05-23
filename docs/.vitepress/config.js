@@ -91,7 +91,8 @@ export default {
                     items: [
                         { text: 'reactive的创建过程', link: '/vue3/summary/reactive的创建过程' },
                         { text: 'ref的创建过程', link: '/vue3/summary/ref的创建过程' },
-                        { text: 'ref的设值与取值', link: '/vue3/summary/ref的设值与取值' }
+                        { text: 'ref的设值与取值', link: '/vue3/summary/ref的设值与取值' },
+                        { text: 'computed', link: '/vue3/summary/computed' }
                     ]
                 },
                 {
