@@ -51,6 +51,15 @@ let str3: string = 'string'
 str3 = 1 // ts(2322)不能将类型“number”分配给类型“string”
 ```
 
+## 函数声明  
+在没有提供函数实现的情况下，有两种声明函数类型的方式
+```ts
+type LongHand = {
+    (a: number): number
+}
+type LongHand = (a: number) => number
+```
+
 ## 联合类型  
 ``Union Types``可以通过管道(|)将变量设置多种类型，赋值时可以根据设置的类型赋值。
 语法
